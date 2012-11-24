@@ -11,12 +11,23 @@
 
 </head>
 <body>
+
+  <form id="inputform">
+    <input type="text" placeholder="Add a new todo..." />
+  </form>
+
+  <h1>my todos</h1>
+  <div id="todos">
+      <ul></ul>
+  </div>
   
   <!-- Include the compiled Ratchet JS -->
   <script src="lib/head.load.min.js"></script>
   <script>
     head
-    .js("lib/stapes.js")
+    .js("lib/zepto.min.js")
+    .js("lib/stapes.min.js")
+    .js("lib/app.js")
     .ready(function(){
       
     })
